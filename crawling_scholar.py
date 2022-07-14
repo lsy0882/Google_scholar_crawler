@@ -13,12 +13,12 @@ import shutil
 parameters = {
     'chromedriver_path' : 'C:/Users/lsy/local_code/Google_scholar_crawler/chromedriver.exe',
     'keyword' : 'IEEE/CVF International Conference',
-    'end_page' : 90,
+    'end_page' : 95,
     'from_year' : 2022,
     'result_folder_name' : 'data',
     'excel_name' : 'IEEE_CVF.xlsx',
     'sheet_name' : 'test'
-}
+    }
 
 
 remove_words = ["[HTML] ", "[PDF] "]
@@ -113,7 +113,7 @@ for page in pages:
     title_intance_list = driver.find_elements(By.CLASS_NAME, 'gs_rt')
     title_info_instance_list = driver.find_elements(By.CLASS_NAME, 'gs_fl')
     authors_year_pusblisher_instance_list = driver.find_elements(By.CLASS_NAME, 'gs_a')
-    time.sleep(random.randint(40, 50))
+    time.sleep(random.randint(20, 30))
 
     current_titles = [preprocess_title(title_instance.accessible_name) for title_instance in title_intance_list]
     current_quotes = [preprocess_title_info(title_info_instance.text) for title_info_instance in title_info_instance_list if "저장" in title_info_instance.text]
@@ -121,7 +121,7 @@ for page in pages:
     current_journals = [preprocess_year_authors(authors_year_pusblisher_instance.text, "journal") for authors_year_pusblisher_instance in authors_year_pusblisher_instance_list]
     current_years = [preprocess_year_authors(authors_year_pusblisher_instance.text, "year") for authors_year_pusblisher_instance in authors_year_pusblisher_instance_list]
     current_publishers = [preprocess_year_authors(authors_year_pusblisher_instance.text, "publisher") for authors_year_pusblisher_instance in authors_year_pusblisher_instance_list]
-    time.sleep(random.randint(30, 40))
+    time.sleep(random.randint(10, 20))
 
     total_titles.extend(current_titles)
     total_quotes.extend(current_quotes)
@@ -129,7 +129,7 @@ for page in pages:
     total_journals.extend(current_journals)
     total_years.extend(current_years)
     total_publishers.extend(current_publishers)
-    time.sleep(random.randint(60, 80))
+    time.sleep(random.randint(20, 30))
 
     print("Crawling progresss = {0:03d} page / {1:03d} pages".format(count, searching_page_num))
 
