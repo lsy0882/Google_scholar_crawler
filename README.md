@@ -33,6 +33,6 @@
 
 ## 3. 코드사용 설명
 * crawling_scholar.py 속 parameters dictionary를 기호에 맞게 수정 후 run 실시
-* google scholar crawling 간 reCAPTCHA(봇 방지용 프로그램) 발생할 경우 패턴을 맞춰줘야 해당 페이지 내용을 긁어올 수 있음
+* google scholar crawling 간 reCAPTCHA(봇 방지용 프로그램) 발생할 경우 1분이내에 패턴을 맞춰줘야 해당 페이지 내용을 긁어올 수 있음
 * version 1.0 기준으로 최초 1회(혹은 2회), 약 60 page에 도달했을 때 1회 reCAPTCHA 발생함
 * 크롤링 패턴을 다양화시켜 더 안잡히게 개선할 예정. 좋은 아이디어 있을 시 알려주시기 바랍니다 :)
