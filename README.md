@@ -23,7 +23,7 @@
        'sheet_name' : 'test'
       }
 ```
-* parameters['chromedriver_path'] : chrome.driver.exe 경로를 의미.
+* parameters['chromedriver_path'] : chromedriver.exe 경로를 의미.
 * parameters['keyword'] : 구글 스칼라에 검색하고 싶은 내용을 의미.
 * parameters['end_page'] : 최대로 Crawling 하고 싶은 페이지 숫자를 의미.
 * parameters['from_year'] : 몇년도 이후 논문을 검색할 것인지를 의미. (예시: 2021 -> 2021~현재까지 논문 서칭)
