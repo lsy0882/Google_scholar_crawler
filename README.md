@@ -32,7 +32,7 @@
 * parameters['sheet_name'] : 저장하려는 excel 속 sheet 이름을 의미.
 
 ## 3. 코드사용 설명
-* crawling_scholar.py 속 parameters dictionary를 기호에 맞게 수정 후 run 실시.
+* crawling_scholar.py 속 parameters dictionary를 본인 환경에 맞게 수정한 후 run 실시.
 * google scholar crawling 간 reCAPTCHA(봇 방지용 프로그램) 발생할 경우 1분이내에 패턴을 맞춰줘야 해당 페이지 내용을 긁어올 수 있음.
 * version 1.0 기준으로 최초 1회(혹은 2회), 약 60 page에 도달했을 때 1회 reCAPTCHA 발생함.
 * reCAPTCHA를 최대한 피하기 위해 Crawling 시간을 길고 랜덤하게 설정함. (1page 당 약 2분 30초 소요)
