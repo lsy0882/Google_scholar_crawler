@@ -1,7 +1,7 @@
 # Google_scholar_crawler
 
 ## 1. 코드사용 전 설명
-* "chrome - 더보기(좌측상단 점3개) - 설정 - Chrome 정보" 에서 현재 pc에 설치된 chrome 버전 확인
+* "chrome - 더보기(우측상단 점3개) - 설정 - Chrome 정보" 에서 현재 pc에 설치된 chrome 버전 확인
 * https://chromedriver.chromium.org/downloads 에서 자신에게 맞는 버전의 chromedirver.exe 을 다운로드
    (github에 올린 chromdriver의 버전은 103.0.5060.53)
 * 다운로드 받은 chromedriver.exe를 crawling을 진행하는 .py 파일과 동일한 directory로 보냄
