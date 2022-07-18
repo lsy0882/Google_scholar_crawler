@@ -13,7 +13,7 @@ import shutil
 parameters = {
     'chromedriver_path' : 'C:/Users/lsy/local_code/Google_scholar_crawler/chromedriver.exe',
     'keyword' : 'IEEE/CVF International Conference',
-    'end_page' : 95,
+    'end_page' : 50,
     'from_year' : 2022,
     'result_folder_name' : 'data',
     'excel_name' : 'IEEE_CVF.xlsx',
